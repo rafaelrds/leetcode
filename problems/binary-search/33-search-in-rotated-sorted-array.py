@@ -6,24 +6,25 @@ class Solution:
         N = len(nums)
         left = 0
         right = len(nums) - 1
+        # find pivot
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid
+        
+        # pivot will be at right!
+        start = left
+        left = 0
+        right = N - 1
         while left <= right:
             mid = (left + right) // 2
-            if nums[mid] == target:
-                return mid
-            elif nums[left] <= nums[mid]:
-                # we are in the left sorted portion
-                if target > nums[mid]:
-                    left = mid + 1
-                elif target < nums[left]:
-                    left = mid + 1
-                else:
-                    right = mid - 1
-                    
+            index = (mid + start) % N 
+            if nums[index] == target:
+                return index
+            elif nums[index] < target:
+                left = mid + 1
             else:
-                # we are in the right sorted portion
-                if target < nums[mid]:
-                    right = mid - 1
-                elif target > nums[right]:
-                    right = mid -1
-                else: left = mid + 1
+                right = mid - 1
         return -1
