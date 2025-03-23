@@ -1,0 +1,12 @@
+{
+    "editor.inlineSuggest.enabled": false,
+    "github.copilot.enable": false,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "editor.suggest.showInlineCompletions": false,
+    "editor.suggest.showAI": false,
+    "vscode.intellicode.completions.enabled": false,
+    "vscode.intellicode.enable": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": false
+    }
+}
