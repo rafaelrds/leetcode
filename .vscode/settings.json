@@ -7,6 +7,6 @@
     "vscode.intellicode.completions.enabled": false,
     "vscode.intellicode.enable": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll": false
+        "source.fixAll": "never"
     }
 }
