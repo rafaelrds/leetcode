@@ -15,5 +15,10 @@ class Solution:
 if __name__ == "__main__":
     # Sequence is [1, 1, 2, 3, 5, 8, 13, 21...]
     s = Solution()
-    for i in range(1, 50):
-        print(s.fibonacci(i))
+
+    assert s.fibonacci(6) == 8
+    assert s.fibonacci(7) == 13
+    assert s.fibonacci(8) == 21
+    assert s.fibonacci(50) == 12586269025
+    print("OK")
+

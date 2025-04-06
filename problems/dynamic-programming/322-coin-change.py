@@ -14,7 +14,6 @@ class Solution:
         return dp[amount] if dp[amount] != (amount + 1) else -1
 
 
-
 if __name__ == "__main__":
     s = Solution()
     res = s.coinChange([1, 3, 4, 5], 7)
