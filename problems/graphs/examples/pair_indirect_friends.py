@@ -1,3 +1,6 @@
+# FIXME using blossom algorithm instead
+
+
 class Solution:
     def pair_indirect_friends(self, graph):
         if not graph:
